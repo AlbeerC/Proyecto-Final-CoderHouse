@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px;
+    background-color: $negro;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+main {
+    background-color: $negro;
+    color: $blanco;
+}
+h1, h2, h3 {
+    font-family: $fuenteTitulos;
+}
+p {
+    font-family: $fuenteTextos;
+}

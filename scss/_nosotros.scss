@@ -1,0 +1,114 @@
+.nosotrosPrincipal {
+    margin-top: 8rem;
+
+    .infoFlex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7rem;
+        padding: 0 5rem;
+
+        @include responsive(tablet) {
+            flex-direction: column;
+            padding: 0;
+        }
+    }
+
+    .nosotrosImagen,
+    .nosotrosTextos {
+        width: 50%;
+
+        @include responsive(tablet) {
+            width: 90%;
+        }
+    }
+
+    .nosotrosImagen img {
+        width: 100%;
+        height: 35rem;
+    }
+
+    .nosotrosTextos h1 {
+        font-size: 3rem;
+        padding: 1rem 0;
+    }
+
+    .nosotrosTextos p {
+        font-size: 2rem;
+        padding: 1rem 0;
+        text-align: justify;
+        line-height: 3rem;
+
+        &:nth-child(2) {
+            color: $principalClaro;
+        }
+    }
+
+    .entradas {
+        margin: 7rem 0;
+        border-top: $borde;
+
+        h2 {
+            font-size: 2.9rem;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .compraEntradas {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10rem;
+        }
+
+        .ticket {
+            font-size: 2.3rem;
+            padding-bottom: 1rem;
+            text-align: center;
+        }
+
+        .unDia {
+            width: 56rem;
+
+            @include responsive(tablet) {
+                width: 80%;
+                padding: 0 2rem;
+            }
+        }
+        .dosDias {
+            @extend .unDia
+        }
+
+        .ticketFondo {
+            text-align: center;
+            background-color: $principalOscuro;
+            padding: 1rem 0;
+            font-weight: bold;
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        .borde {
+            border-bottom: 1px solid $negro;
+            padding: 1rem 0;
+            background-color: $blanco;
+            color: $negro;
+            padding-left: 1rem;
+            font-size: 1.8rem;
+            margin-left: -2rem;
+
+            &:last-child {
+                border: none;
+            }
+        }
+
+        .precio {
+            background-color: $principalClaro;
+            text-align: center;
+            padding: 1rem 0;
+            font-weight: bold;
+            font-size: 2.2rem;
+            margin-top: -1rem;
+        }
+    }
+}

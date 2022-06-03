@@ -1,0 +1,396 @@
+@charset "UTF-8";
+/* Colores */
+/* Fuentes */
+/* Borde */
+/* Tamaños media queries */
+/* Mixin para responsive */
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 16px;
+  background-color: #000000; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+main {
+  background-color: #000000;
+  color: #ffffff; }
+
+h1, h2, h3 {
+  font-family: "Concert One"; }
+
+p {
+  font-family: "Philosopher"; }
+
+/* Header */
+header {
+  background: black;
+  background: linear-gradient(90deg, black 0%, #4d7879 0%, #6999b5 53%, #34b2b3 100%);
+  padding: 0 5rem;
+  border-bottom: solid 2px #ffffff;
+  font-family: "Bebas Neue"; }
+  @media (max-width: 1200px) {
+    header nav ul {
+      align-items: center;
+      gap: 1rem; } }
+  header a img {
+    height: 10rem;
+    width: auto; }
+  header .nav-link {
+    cursor: pointer;
+    color: #ffffff !important;
+    font-size: 2.7rem; }
+    header .nav-link:hover {
+      color: #333C83 !important; }
+
+/* Footer */
+footer {
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 2px #ffffff;
+  background: black;
+  background: linear-gradient(90deg, black 0%, #415758 0%, #6999b5 53%, #34b2b3 100%); }
+  @media (max-width: 768px) {
+    footer {
+      padding: 1rem;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 2rem; } }
+  footer p {
+    font-size: 2rem;
+    color: #ffffff;
+    margin: auto 0; }
+  footer a {
+    margin: 0 1rem; }
+  footer .footerIconos {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    transition: all 500ms ease; }
+  footer .footerIconos a svg:hover {
+    transform: translateY(-3%); }
+
+.indexPrincipal {
+  background-image: url(../img/iniciofondo.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 58rem;
+  width: 100%;
+  border-bottom: solid 2px #ffffff; }
+  .indexPrincipal:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .indexPrincipal .indexPrincipalTextos {
+    padding: 22rem 0 0 15rem;
+    color: #ffffff;
+    position: relative; }
+    .indexPrincipal .indexPrincipalTextos h1 {
+      font-size: 5rem;
+      padding-bottom: 3rem;
+      font-weight: bold; }
+    .indexPrincipal .indexPrincipalTextos p {
+      font-size: 2.5rem;
+      font-weight: bold; }
+    @media (max-width: 1200px) {
+      .indexPrincipal .indexPrincipalTextos {
+        text-align: center;
+        padding: 17rem 2rem 0 2rem; } }
+
+.infoLugar {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 3rem 5rem; }
+  @media (max-width: 1200px) {
+    .infoLugar {
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem 3rem; } }
+
+@media (max-width: 1200px) {
+  .mapa iframe {
+    width: 100%; } }
+
+.textos h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 3rem; }
+
+.textos p {
+  font-size: 1.8rem;
+  padding-top: 4rem;
+  line-height: 3rem;
+  text-align: justify; }
+
+.textosTitulo {
+  font-weight: bold; }
+
+.infoLugar {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  margin-bottom: 3rem; }
+
+.mapa h3 {
+  padding-bottom: 2rem;
+  font-size: 2.4rem; }
+
+/* Carrusel */
+.carrusel {
+  margin: 5rem 0;
+  padding: 0 5rem; }
+  .carrusel img {
+    height: 50rem;
+    width: 100%; }
+  @media (max-width: 768px) {
+    .carrusel {
+      display: none; } }
+
+/* Noticias */
+.noticias {
+  color: #ffffff;
+  border-top: solid 2px #ffffff; }
+  .noticias h2 {
+    text-align: center;
+    font-size: 3.3rem;
+    margin: 3rem 0; }
+  .noticias .notiContenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    flex-wrap: wrap; }
+    @media (max-width: 1200px) {
+      .noticias .notiContenedor {
+        justify-content: center;
+        gap: 3rem; } }
+  .noticias .notiColumna {
+    width: 25rem;
+    margin-bottom: 3rem;
+    cursor: pointer; }
+    .noticias .notiColumna p {
+      padding: 1rem 0; }
+    .noticias .notiColumna img {
+      height: 25rem;
+      width: 25rem; }
+
+.nosotrosPrincipal {
+  margin-top: 8rem; }
+  .nosotrosPrincipal .infoFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    padding: 0 5rem; }
+    @media (max-width: 768px) {
+      .nosotrosPrincipal .infoFlex {
+        flex-direction: column;
+        padding: 0; } }
+  .nosotrosPrincipal .nosotrosImagen,
+  .nosotrosPrincipal .nosotrosTextos {
+    width: 50%; }
+    @media (max-width: 768px) {
+      .nosotrosPrincipal .nosotrosImagen,
+      .nosotrosPrincipal .nosotrosTextos {
+        width: 90%; } }
+  .nosotrosPrincipal .nosotrosImagen img {
+    width: 100%;
+    height: 35rem; }
+  .nosotrosPrincipal .nosotrosTextos h1 {
+    font-size: 3rem;
+    padding: 1rem 0; }
+  .nosotrosPrincipal .nosotrosTextos p {
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-align: justify;
+    line-height: 3rem; }
+    .nosotrosPrincipal .nosotrosTextos p:nth-child(2) {
+      color: #34b2b3; }
+  .nosotrosPrincipal .entradas {
+    margin: 7rem 0;
+    border-top: solid 2px #ffffff; }
+    .nosotrosPrincipal .entradas h2 {
+      font-size: 2.9rem;
+      text-align: center;
+      padding: 3rem 0; }
+    .nosotrosPrincipal .entradas .compraEntradas {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10rem; }
+    .nosotrosPrincipal .entradas .ticket {
+      font-size: 2.3rem;
+      padding-bottom: 1rem;
+      text-align: center; }
+    .nosotrosPrincipal .entradas .unDia, .nosotrosPrincipal .entradas .dosDias {
+      width: 56rem; }
+      @media (max-width: 768px) {
+        .nosotrosPrincipal .entradas .unDia, .nosotrosPrincipal .entradas .dosDias {
+          width: 80%;
+          padding: 0 2rem; } }
+    .nosotrosPrincipal .entradas .ticketFondo {
+      text-align: center;
+      background-color: #4d7879;
+      padding: 1rem 0;
+      font-weight: bold;
+      font-size: 2.2rem;
+      margin: 0; }
+    .nosotrosPrincipal .entradas .borde {
+      border-bottom: 1px solid #000000;
+      padding: 1rem 0;
+      background-color: #ffffff;
+      color: #000000;
+      padding-left: 1rem;
+      font-size: 1.8rem;
+      margin-left: -2rem; }
+      .nosotrosPrincipal .entradas .borde:last-child {
+        border: none; }
+    .nosotrosPrincipal .entradas .precio {
+      background-color: #34b2b3;
+      text-align: center;
+      padding: 1rem 0;
+      font-weight: bold;
+      font-size: 2.2rem;
+      margin-top: -1rem; }
+
+.artistasPrincipal {
+  overflow: hidden; }
+  .artistasPrincipal h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem 0; }
+  .artistasPrincipal h2 {
+    font-size: 2.5rem;
+    text-align: center; }
+  .artistasPrincipal .carteles {
+    display: flex;
+    justify-content: center;
+    gap: 8rem; }
+    .artistasPrincipal .carteles .cartel {
+      padding-bottom: 4rem;
+      width: 30rem;
+      background-color: #FFFBE7;
+      border: solid 3px #34b2b3;
+      color: #000000;
+      margin: 3rem 0;
+      border-radius: 1rem;
+      cursor: default;
+      font-weight: 700;
+      transition: all 500ms ease; }
+      .artistasPrincipal .carteles .cartel:hover {
+        transform: translateY(-3%); }
+      .artistasPrincipal .carteles .cartel li {
+        list-style: inside;
+        padding-top: 4rem;
+        font-size: 1.8rem;
+        font-family: "Philosopher"; }
+      .artistasPrincipal .carteles .cartel h3 {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 2rem; }
+    @media (max-width: 768px) {
+      .artistasPrincipal .carteles {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem; } }
+
+.galeriaPrincipal {
+  padding: 3rem; }
+  .galeriaPrincipal h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 4rem; }
+  .galeriaPrincipal img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1rem;
+    transition: all .5s ease; }
+    .galeriaPrincipal img:hover {
+      transform: scale(1.1); }
+  .galeriaPrincipal .imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    justify-content: center;
+    justify-items: center; }
+    @media (max-width: 1200px) {
+      .galeriaPrincipal .imagenes {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center; } }
+    @media (max-width: 768px) {
+      .galeriaPrincipal .imagenes {
+        grid-template-columns: 1fr;
+        justify-items: center; } }
+
+.contactoPrincipal {
+  background-image: url(../img/contactofondo.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2.8rem; }
+  .contactoPrincipal:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); }
+  .contactoPrincipal h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 2rem;
+    position: relative; }
+  .contactoPrincipal .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; }
+    .contactoPrincipal .formulario .campo {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      padding: 1rem 0; }
+      .contactoPrincipal .formulario .campo label {
+        font-size: 2rem;
+        font-weight: bold;
+        padding-bottom: .8rem;
+        font-family: "Concert One"; }
+      .contactoPrincipal .formulario .campo input {
+        padding: 1rem 2rem; }
+    .contactoPrincipal .formulario .btnEnviar {
+      margin: 2rem auto;
+      display: block;
+      background-color: #000000;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 1rem 6rem;
+      font-family: "Philosopher";
+      font-size: 2rem;
+      border-radius: 5px;
+      border: 3px solid #34b2b3; }

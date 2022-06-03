@@ -1,0 +1,140 @@
+.indexPrincipal {
+    background-image: url(../img/iniciofondo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 58rem;
+    width: 100%;
+    border-bottom: $borde;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .indexPrincipalTextos {
+        padding: 22rem 0 0 15rem;
+        color: $blanco;
+        position: relative;
+
+        h1 {
+            font-size: 5rem;
+            padding-bottom: 3rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        @include responsive(pc) {
+            text-align: center;
+            padding: 17rem 2rem 0 2rem;
+        }
+    }
+}
+    .infoLugar {
+        background-color: $negro;
+        color: $blanco;
+        padding: 3rem 5rem;
+        
+        @include responsive(pc) {
+            flex-direction: column;
+            width: 100%;
+            padding: 1rem 3rem;
+        }
+    }
+    .mapa {
+        iframe {
+            @include responsive(pc) {
+                width: 100%;
+            }
+        }
+    }
+    .textos h2 {
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 3rem;
+    }
+
+    .textos p {
+        font-size: 1.8rem;
+        padding-top: 4rem;
+        line-height: 3rem;
+        text-align: justify;
+    }
+
+    .textosTitulo {
+        font-weight: bold;
+    }
+
+    .infoLugar {
+        display: flex;
+        justify-content: center;
+        gap: 6rem;
+        margin-bottom: 3rem;
+    }
+
+    .mapa h3 {
+        padding-bottom: 2rem;
+        font-size: 2.4rem;
+    }
+
+/* Carrusel */
+    .carrusel {
+        margin: 5rem 0;
+        padding: 0 5rem;
+        img {
+        height: 50rem;
+        width: 100%;
+        }
+
+        @include responsive(tablet) {
+            display: none;
+        }
+    }
+
+/* Noticias */
+    .noticias {
+        color: $blanco;
+        border-top: $borde;
+
+        h2 {
+            text-align: center;
+            font-size: 3.3rem;
+            margin: 3rem 0;
+        }
+
+        .notiContenedor {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5rem;
+            flex-wrap: wrap;
+        
+            @include responsive(pc) {
+                justify-content: center;
+                gap: 3rem;
+            }
+        }
+
+        .notiColumna {
+            width: 25rem;
+            margin-bottom: 3rem;
+            cursor: pointer;
+
+            p {
+                padding: 1rem 0;
+            }
+
+            img {
+                height: 25rem;
+                width: 25rem;
+            }
+        }
+    }

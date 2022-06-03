@@ -1,0 +1,70 @@
+/* Header */
+
+header {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(77, 120, 121) 0%, rgba(105,153,181,1) 53%, rgba(52,178,179,1) 100%);
+    padding: 0 5rem;
+    border-bottom: $borde;
+    font-family: $fuenteEnlaces;
+    nav ul {
+        @include responsive(pc) {
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    a img {
+        height: 10rem;
+        width: auto;
+    }
+
+    .nav-link {
+        cursor: pointer;
+        color: $blanco !important;
+        font-size: 2.7rem;
+
+        &:hover {
+            color: $azul !important;
+        }
+    }
+}
+/* Footer */
+
+footer {
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: $borde;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(65,87,88,1) 0%, rgba(105,153,181,1) 53%, rgba(52,178,179,1) 100%);
+
+    @include responsive(tablet) {
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    p {
+        font-size: 2rem;
+        color: $blanco;
+        margin: auto 0;
+    }
+
+    a {
+        margin: 0 1rem;
+    }
+
+    .footerIconos {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        transition: all 500ms ease;
+    }
+
+    .footerIconos a svg:hover {
+        transform: translateY(-3%);
+    }
+}

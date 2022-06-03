@@ -1,0 +1,56 @@
+.artistasPrincipal {
+    overflow: hidden;
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .carteles {
+        display: flex;
+        justify-content: center;
+        gap: 8rem;
+
+        .cartel {
+            padding-bottom: 4rem;
+            width: 30rem;
+            background-color: #FFFBE7;
+            border: solid 3px $principalClaro;
+            color: $negro;
+            margin: 3rem 0;
+            border-radius: 1rem;
+            cursor: default;
+            font-weight: 700;
+            transition: all 500ms ease;
+
+            &:hover {
+                transform: translateY(-3%);
+            }
+
+            li {
+                list-style: inside;
+                padding-top: 4rem;
+                font-size: 1.8rem;
+                font-family: $fuenteTextos;
+            }
+
+            h3 {
+                text-align: center;
+                font-size: 2rem;
+                padding-top: 2rem;
+            }
+        }
+
+        @include responsive(tablet) {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+}
