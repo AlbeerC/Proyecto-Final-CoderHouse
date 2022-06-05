@@ -286,6 +286,7 @@ footer {
   .artistasPrincipal .carteles {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 8rem; }
     .artistasPrincipal .carteles .cartel {
       padding-bottom: 4rem;
