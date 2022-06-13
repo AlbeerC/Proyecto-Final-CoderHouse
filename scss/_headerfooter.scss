@@ -6,6 +6,11 @@ header {
     padding: 0 5rem;
     border-bottom: $borde;
     font-family: $fuenteEnlaces;
+
+    @include responsive (tablet) {
+        padding: 0 2rem;
+    }
+
     nav ul {
         @include responsive(pc) {
             align-items: center;
@@ -46,7 +51,7 @@ footer {
         text-align: center;
         gap: 2rem;
     }
-
+    
     p {
         font-size: 2rem;
         color: $blanco;

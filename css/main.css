@@ -42,6 +42,9 @@ header {
   padding: 0 5rem;
   border-bottom: solid 2px #ffffff;
   font-family: "Bebas Neue"; }
+  @media (max-width: 768px) {
+    header {
+      padding: 0 2rem; } }
   @media (max-width: 1200px) {
     header nav ul {
       align-items: center;
@@ -87,7 +90,7 @@ footer {
     transform: translateY(-3%); }
 
 .indexPrincipal {
-  background-image: url(../img/iniciofondo.gif);
+  background-image: url(../img/iniciofondo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -104,7 +107,8 @@ footer {
     right: 0;
     background-color: rgba(0, 0, 0, 0.5); }
   .indexPrincipal .indexPrincipalTextos {
-    padding: 22rem 0 0 15rem;
+    text-align: center;
+    padding-top: 18rem;
     color: #ffffff;
     position: relative; }
     .indexPrincipal .indexPrincipalTextos h1 {
@@ -116,7 +120,6 @@ footer {
       font-weight: bold; }
     @media (max-width: 1200px) {
       .indexPrincipal .indexPrincipalTextos {
-        text-align: center;
         padding: 17rem 2rem 0 2rem; } }
 
 .infoLugar {
@@ -135,11 +138,11 @@ footer {
 
 .textos h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.3rem;
   padding-top: 3rem; }
 
 .textos p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding-top: 4rem;
   line-height: 3rem;
   text-align: justify; }
@@ -184,13 +187,16 @@ footer {
     @media (max-width: 1200px) {
       .noticias .notiContenedor {
         justify-content: center;
-        gap: 3rem; } }
+        gap: 8rem; } }
   .noticias .notiColumna {
     width: 25rem;
     margin-bottom: 3rem;
     cursor: pointer; }
     .noticias .notiColumna p {
-      padding: 1rem 0; }
+      padding: 1rem 0;
+      font-size: 1.9rem; }
+    .noticias .notiColumna h3 {
+      font-size: 2rem; }
     .noticias .notiColumna img {
       height: 25rem;
       width: 25rem; }
@@ -287,7 +293,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 8rem; }
+    gap: 12rem; }
     .artistasPrincipal .carteles .cartel {
       padding-bottom: 4rem;
       width: 30rem;
@@ -310,6 +316,9 @@ footer {
         text-align: center;
         font-size: 2rem;
         padding-top: 2rem; }
+    @media (max-width: 1200px) {
+      .artistasPrincipal .carteles {
+        gap: 5rem; } }
     @media (max-width: 768px) {
       .artistasPrincipal .carteles {
         flex-direction: column;
@@ -332,7 +341,7 @@ footer {
   .galeriaPrincipal .imagenes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 3rem;
+    grid-gap: 2rem;
     justify-content: center;
     justify-items: center; }
     @media (max-width: 1200px) {
